@@ -324,6 +324,9 @@ section {
 }
 
 .section-title {
+  display: flex;
+  justify-content: space-between; /* Espace entre les éléments */
+  align-items: center; /* Aligner verticalement */
   padding-bottom: 30px;
 }
 
@@ -345,6 +348,26 @@ section {
   background: #149ddd;
   bottom: 0;
   left: 0;
+}
+.download-link {
+  margin-right: 1rem;
+}
+
+.download-link a {
+  padding: 8px 15px;  /* Espace intérieur (haut/bas, gauche/droite) */
+  background-color: #007BFF;  /* Couleur de fond bleu */
+  color: white;  /* Couleur du texte */
+  border-radius: 10px;  /* Coins arrondis */
+  border: 2px solid #007BFF;  /* Bordure bleue */
+  display: inline-block;  /* Pour que le lien soit encadré comme un bouton */
+  text-align: center;  /* Centrer le texte */
+  font-size: 16px;  /* Réduire la taille du texte */
+}
+
+.download-link a:hover {
+  background-color: #0056b3;  /* Couleur de fond lors du survol */
+  border-color: #0056b3;  /* Changer la couleur de la bordure lors du survol */
+  text-decoration: none;  /* Optionnel : retirer la sous-ligne lors du survol */
 }
 
 .section-title p {
